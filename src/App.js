@@ -21,7 +21,9 @@ class App extends React.Component {
 
     this.setState({
       wikiSearchReturnValue: []
-    })
+    });
+
+    const pointerToThis= this;
   }
 
   render() {
