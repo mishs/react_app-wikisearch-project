@@ -11,12 +11,17 @@ class App extends React.Component {
 
   changeWikiSearchTerms = e => {
     this.setState({
+      wikiSearchReturnValue: [],
       WikiSearchTerms: e.target.value
     });
   }
 
-  useWikiSearchEngine = () => {
+  useWikiSearchEngine = (e) => {
     e.preventDefault();
+
+    this.setState({
+      wikiSearchReturnValue: []
+    })
   }
 
   render() {
