@@ -24,6 +24,8 @@ class App extends React.Component {
     });
 
     const pointerToThis= this;
+
+    var url = 'https://www.mediawiki.org/w/api.php';
   }
 
   render() {
