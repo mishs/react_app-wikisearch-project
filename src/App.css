@@ -34,3 +34,14 @@ h1 {
 .App input:focus {
   outline: none;
 }
+.App button {
+  line-height: 40px;
+  border: none;
+  background-color: #f6f6f6;
+  padding: 0 20px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+.App button:focus {
+  outline: none;
+}
