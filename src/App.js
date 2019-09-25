@@ -3,12 +3,19 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      changeWikiSearchTerms: ''
+    }
+  }
+
   render() {
   return (
     <div className="App">
       <h1>Wikipedia Search Engine</h1>
       <form action=''>
-       <input type="text" value='' placeholder='Type to Search WikiPedia'  />
+       <input type="text" value='' onChange={this.changeWikiSearchTerms} placeholder='Type to Search WikiPedia'  />
        <button type='submit' onClick={}></button>
       </form>
       {wikiSearchResults}
