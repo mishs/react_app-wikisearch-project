@@ -5,7 +5,12 @@ import './App.css';
 class App extends React.Component {
   render() {
   return (
-    <div>Wikipedia Search Engine</div>
+    <div className="App">
+      <h1>Wikipedia Search Engine</h1>
+      <form action=''>
+       <input type="text" value='' placeholder='Type to Search WikiPedia'  />
+      </form>
+    </div>
     );
   }
 }
