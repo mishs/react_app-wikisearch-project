@@ -11,7 +11,7 @@ class App extends React.Component {
 
   changeWikiSearchTerms = e => {
     this.setState({
-      changeWikiSearchTerms: e.target.value
+      WikiSearchTerms: e.target.value
     });
   }
 
@@ -26,7 +26,7 @@ class App extends React.Component {
     <div className="App">
       <h1>Wikipedia Search Engine</h1>
       <form action=''>
-       <input type="text" value='' onChange={this.changeWikiSearchTerms} placeholder='Type to Search WikiPedia'  />
+       <input type="text" value={this.state.WikiSearchTerms || ''} onChange={this.changeWikiSearchTerms} placeholder='Type to Search WikiPedia'  />
        <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
       </form>
       {wikiSearchResults}
