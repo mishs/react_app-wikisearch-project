@@ -16,13 +16,18 @@ class App extends React.Component {
     });
   }
 
+  useWikiSearchEngine = () => {
+
+  }
+
   render() {
+
   return (
     <div className="App">
       <h1>Wikipedia Search Engine</h1>
       <form action=''>
        <input type="text" value='' onChange={this.changeWikiSearchTerms} placeholder='Type to Search WikiPedia'  />
-       <button type='submit' onClick={}></button>
+       <button type='submit' onClick={this.useWikiSearchEngine}></button>
       </form>
       {wikiSearchResults}
     </div>
