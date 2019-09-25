@@ -21,6 +21,7 @@ class App extends React.Component {
   }
 
   render() {
+    let wikiSearchResults = [];
 
   return (
     <div className="App">
