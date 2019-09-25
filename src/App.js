@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
@@ -28,7 +27,7 @@ class App extends React.Component {
       <h1>Wikipedia Search Engine</h1>
       <form action=''>
        <input type="text" value='' onChange={this.changeWikiSearchTerms} placeholder='Type to Search WikiPedia'  />
-       <button type='submit' onClick={this.useWikiSearchEngine}></button>
+       <button type='submit' onClick={this.useWikiSearchEngine}>Search</button>
       </form>
       {wikiSearchResults}
     </div>
