@@ -39,6 +39,29 @@ class App extends React.Component {
       url += "&" + key + "=" + params[key];
     });
 
+    fetch(url)
+    .then(
+      function (response) {
+        return response.json();
+      }
+    )
+    .then(
+      function (response) {
+        // console.log(response);
+
+        for (var key in response.query.search) {
+          pointerToThis.state.wikiSearchReturnValues.push({
+            queryResultPageFullURL: 'no link',
+            queryResultPageID: response.query.search[key].pageid,
+            queryResultPageTitle: response.query.search[key].title,
+            queryResultPageSnippet: response.query.search[key].snippet
+          });
+        }
+      }
+    )
+
+}
+
   }
 
   render() {
