@@ -26,6 +26,19 @@ class App extends React.Component {
     const pointerToThis= this;
 
     var url = 'https://www.mediawiki.org/w/api.php';
+
+    var params = {
+      action: 'query',
+      list: 'search',
+      srsearch: this.state.WikiSearchTerms,
+      format: 'json'
+    };
+
+    url = url + '?origin=*';
+    Object.keys(params).forEach((key) => {
+      url += "&" + key + "=" + params[key];
+    });
+
   }
 
   render() {
