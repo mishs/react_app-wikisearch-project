@@ -10,6 +10,12 @@ class App extends React.Component {
     }
   }
 
+  changeWikiSearchTerms = e => {
+    this.setState({
+      changeWikiSearchTerms: e.target.value
+    });
+  }
+
   render() {
   return (
     <div className="App">
