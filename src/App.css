@@ -45,3 +45,9 @@ h1 {
 .App button:focus {
   outline: none;
 }
+.searchResultDiv {
+  width: 850px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 20px;
+}
