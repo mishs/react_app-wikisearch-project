@@ -14,8 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# react_app-wikisearch-project
+# react_app: wikisearch-project
 # Scope and Objective of the App.
 Accepts keywords/texts, performs a GET request on Wikipedia and displays the results in a list just below the text input. Afterwards, when a user clicks on row, navigated to a detailed screen which has a wikipedia page navigation bar and;
 a webview component to load that page.
