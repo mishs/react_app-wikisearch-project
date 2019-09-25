@@ -66,3 +66,16 @@ h1 {
 .searchResultDiv a:visited {
   color: #0dab42;
 }
+.searchResultDiv .link a {
+  text-decoration: none;
+  color: #7e2857;
+}
+.searchResultDiv .link a:hover {
+  text-decoration: none;
+}
+.searchResultDiv .searchmatch {
+  font-weight: bold;
+}
+.searchResultDiv .description {
+  color: #414141;
+}
