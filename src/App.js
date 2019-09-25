@@ -9,7 +9,9 @@ class App extends React.Component {
       <h1>Wikipedia Search Engine</h1>
       <form action=''>
        <input type="text" value='' placeholder='Type to Search WikiPedia'  />
+       <button type='submit' onClick={}></button>
       </form>
+      {wikiSearchResults}
     </div>
     );
   }
